@@ -1,0 +1,10 @@
+@font-face {
+    src: url('./Resources/font/Lato-Regular.ttf');
+    font-family: lato;
+}
+
+body {
+    color: $black-color;
+    font-family: lato;
+    font-size: 1em;
+}

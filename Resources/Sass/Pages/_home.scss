@@ -1,0 +1,21 @@
+body {
+    background-color: $light-blue-color;
+}
+@keyframes slogan-animate {
+    from {
+        top: -40px;
+        opacity: 0;
+    }
+    to {
+        top: 60px;
+        opacity: 1;
+    }
+}
+@keyframes login-animate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

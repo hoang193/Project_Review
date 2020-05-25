@@ -1,0 +1,13 @@
+body {
+    color: $black-color;
+    font-size: 1em;
+    font-family: lato;
+}
+@font-face {
+    src: url('../Font/Lato-Regular.ttf');
+    font-family: lato;
+}
+@font-face {
+    src: url('../Font/Quicksand-Regular.ttf');
+    font-family: quick;
+}

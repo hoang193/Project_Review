@@ -1,0 +1,186 @@
+.header {
+    // BAR NAVIGATION
+    .menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 10px;
+    }
+    .row {
+        background-color: #ffffff;
+        .col-xl-3 {
+            display: flex;
+            justify-content: center;
+            padding-right: 10rem;
+            padding-top: 15px;
+           
+            // LOGO
+            .box-logo {
+                width: 150px;
+                height: 20px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        // MENU 
+        .col-xl-9 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+           
+            .nav {
+                margin-left: 0;
+                li {
+                    width: 150px;
+                    padding: 15px 0;
+                    text-align: center;
+                    cursor: pointer;
+                    a {
+                        font-size: 18px;
+                        color: $black-color;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        text-shadow: 1px 1px 2px #111111;
+                    }
+                }
+                li:before {
+                    content: '';
+                    border-bottom: 2px solid;
+                    width: 0;
+                    position: absolute;
+                    top: 10px;
+                    transition: 1s;
+                }
+                li:hover:before {
+                    width: 100px;
+                    height: 30px;
+                    opacity: 0;
+                }
+            }
+        }
+        //SEARCH 
+       .search-container {
+            position: absolute;
+            right: 0;
+            .search {
+                border: 1px solid $light-gray-color;
+                width: 30px;
+                height: 30px;
+                border-radius: 10px;
+                outline: none;
+                position: absolute;
+                right: 130px;
+                justify-content: flex-end;
+                text-indent: 5px;
+                font-size: 14px;
+                color: #2c2727;
+            }
+            .icon-search {
+                color: $light-gray-color;
+                line-height: 30px;
+                display: flex;
+                justify-content: flex-end;
+                position: relative;
+                right: 138px;
+                cursor: pointer;
+            }
+            .icon-search:hover {
+                color: #a1a1a1;
+            }
+       }
+        //USER
+        .user-container {
+            position: absolute;
+            right: 60px;
+            .box-user {
+               
+                .icon-user {
+                    font-size: 26px;
+                }
+                .box-login-user {
+                    box-shadow: -1px 4px 8px rgba(0,0,0, .5);
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    // z-index: 1;
+                    width: 80px;
+                    height: 80px;
+                    left: -25px;
+                    top: -10px; 
+                    padding: 15px 3px 3px 3px;
+                    border-radius: 0 0 3px 3px;
+                    display: none;
+                    a {
+                        line-height: 28px;
+                        font-size: 15px;
+                        color: $black-color;
+                        text-decoration: none;
+                        text-shadow: .1px .1px 1px #111111;
+                    }
+                }
+            }
+        }
+    }
+
+    // BANNER 
+    .banner {
+        position: relative;
+        z-index: -9;
+    }
+    .row {
+    
+        .col-xl-12{
+            padding: 0;
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+            .slide-container {
+                height: 60rem;
+                position: absolute;
+                top: -26rem;
+                display: flex;
+                flex-direction: row;
+            }
+            .slogan {
+                position: relative;
+                z-index: 1;
+                top: 60px;
+                animation: slogan-animate 1.2s linear;
+                h1 {
+                    font-family: quick;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, 80%);
+                    text-align: center;
+                    text-shadow: -1px 1px 2px #111111;
+                }
+            }
+            .login {
+                position: relative;
+                z-index: 999;
+                top: 50%;
+                left: 50%;
+                transform: translate(-80px, 40px);
+                animation: login-animate 2.5s linear;
+                a {
+                    background-color: $red-color;
+                    color: $white-color;
+                    padding: 15px 25px;
+                    text-decoration: none;
+                    font-size: 20px;
+                    border-radius: 2px;
+                    opacity: .9;
+                }
+            }
+        }
+    }
+}
+
+section {
+    height: 2000px;
+    
+}

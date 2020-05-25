@@ -11,3 +11,23 @@ body {
     src: url('../Font/Quicksand-Regular.ttf');
     font-family: quick;
 }
+h2 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 20px;
+    transition: all .2s;
+    color: $black-color;
+    a{
+        text-decoration: none;
+    }
+    &:hover {
+        font-size: 32px;
+    }
+
+}
+h2,h3{
+    color: $black-color;
+}

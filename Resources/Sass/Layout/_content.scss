@@ -1,0 +1,54 @@
+.content{
+    margin-top: 10px;
+    background-color: $light-pink-color;
+    border-radius: 20px;
+    padding: 10px;
+    &__picture{
+        padding: 10px;
+        width: 450px;
+        height: 280px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+    }
+    &__main{
+        margin-left: 50px;
+    }
+    
+    &--time{
+        margin-top: -20px;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        font-size: 14px;
+        font-weight: 200;
+        color: $light-gray-color;
+    }
+    &--title{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 1000;
+        font-size: 25px;
+        word-spacing: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        a{
+          text-decoration: none;  
+        }
+    }
+    &--post{
+        margin-top: -20px;
+        text-align: justify;
+        padding: 10px;
+    }
+    &--interactive{
+        margin-top: 10px;
+        float: right;
+        i{
+            width: 50px;
+            font-size: 20px;
+        }
+    }
+}

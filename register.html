@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Đăng kí</title>
+    <link rel="stylesheet" href="./Vendors/Font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Resources/Css/main.css">
+</head>
+<body>
+
+    <div class="main">
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" id="signup-form" class="signup-form">
+                        <div class="b_logo"><a href="#"><img class="logo_form " src="./Resources/Img/Logo/lg.png" alt=""></a></div>
+                        <h2 class="form-title">Tạo tài khoản</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="name" id="name" placeholder="Họ tên của bạn"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" name="email" id="email" placeholder="Email của bạn"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="password" id="password" placeholder="Mật khẩu"/>
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="re_password" id="re_password" placeholder="Nhập lại mật khẩu của bạn"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term " />
+                            <label for="agree-term" class="label-agree-term "><span><span></span></span>Tôi đồng ý với tất cả  <a href="#" class="term-service">điều khoản dịch vụ</a></label>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Đăng kí"/>
+                        </div>
+                    </form>
+                    <p class="loginhere">
+                        Bạn đã có tài khoản? <a href="#" class="loginhere-link">Đăng nhập</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="./Vendors/Js/jquery-3.4.1.min.js"></script>
+    <script src="./Resources/Js/register.js"></script>
+</body>
+</html>

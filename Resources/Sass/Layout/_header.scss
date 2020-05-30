@@ -1,5 +1,7 @@
 .header {
     // BAR NAVIGATION
+    position: relative;
+    z-index: 99;
     .menu {
         position: fixed;
         top: 0;

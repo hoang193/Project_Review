@@ -4,14 +4,15 @@ body {
     font-family: lato;
 }
 @font-face {
-    src: url('../Font/Lato-Regular.ttf');
+    src: url('../../Font/Lato-Regular.ttf');
     font-family: lato;
 }
 @font-face {
-    src: url('../Font/Quicksand-Regular.ttf');
+    src: url('../../Font/Quicksand-Regular.ttf');
     font-family: quick;
 }
-h2 {
+
+.h2 {
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;

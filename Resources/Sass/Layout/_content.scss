@@ -132,7 +132,7 @@
             top: 8px;
             width: 0;
             z-index: 1;
-            right: 95px;
+            right: 92px;
             border: medium solid $black-color;
             border-width: 10px 0 10px 10px;
             border-color: transparent transparent transparent $black-color;
@@ -144,7 +144,7 @@
             top: 8px;
             width: 0;
             z-index: 1;
-            left: 95px;
+            left: 92px;
             border: medium solid $black-color;
             border-width: 10px 10px 10px 0;
             border-color: transparent $black-color transparent transparent;
@@ -191,6 +191,8 @@
         .title {
             text-align: center;
             margin-bottom: 20px;
+            z-index: 1;
+            position: relative;
             h2 {
                 font-family: Arial, Helvetica, sans-serif;
                 text-transform: uppercase;
@@ -200,7 +202,7 @@
         .map {
             width: 900px;
             height: 500px;
-            margin: 0 auto;
+            margin: 50px auto;
             overflow: hidden;
             border-radius: 4px;
             iframe {

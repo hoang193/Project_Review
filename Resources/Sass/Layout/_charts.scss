@@ -19,7 +19,7 @@
         position: absolute;
         color: $black-color;
         margin-top: 110px;
-        
+        z-index: -9;
     }
     &--picture:hover img,
     &--picture:active img{

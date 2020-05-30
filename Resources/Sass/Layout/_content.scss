@@ -1,8 +1,11 @@
 .content{
-    margin-top: 10px;
+    position: relative;
+    z-index: -9;
+    margin-top: 20px;
     background-color: $light-pink-color;
     border-radius: 20px;
     padding: 10px;
+    margin-bottom: 30px;
     &__picture{
         padding: 10px;
         width: 450px;

@@ -1,0 +1,112 @@
+// Founder 
+.founder {
+    height: 500px;
+    background-color: $white-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -9;
+    .our-team {
+        text-align: center;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+        height: 400px;
+        margin: 20px;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+            height: auto;
+            transition: all 0.55s ease 0s;
+        }
+        .team-content {
+            padding: 5px 10px 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            transform: rotate(45deg) translate(-50%, -50%);
+            transform-origin: 0 0;
+            transition: all 0.55s ease 0s;
+        }
+        .team-content:before,
+        .team-content:after {
+            content: "";
+            width: 400px;
+            height: 2px;
+            background: #95ccea;
+            position: absolute;
+            top: 0;
+            left: 10px;
+            transform: translateX(100%);
+            transition: all 0.55s ease 0s;
+        }
+        .team-content:after{
+            top: auto;
+            left: auto;
+            bottom: 0;
+            right: 10px;
+            transform: translateX(-100%);
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 400;
+            color: #111111;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .title:after{
+            top: auto;
+            right: auto;
+            bottom: 10px;
+            left: 0;
+            transform: translateY(-100%);
+        }
+        .post{
+            display: block;
+            padding: 5px 10px;
+            background: #95ccea;
+            font-size: 17px;
+            font-weight: 700;
+            color: #000;
+            text-transform: capitalize;
+        }
+    }
+    .our-team:hover img{ 
+        opacity: 0.5; 
+    }
+    .our-team:hover .team-content{ 
+        opacity: 1;
+    }
+    .our-team:hover .team-content:before,
+    .our-team:hover .team-content:after{
+        transform: translate(0, 0);
+        transition-delay: 0.15s;        
+    }
+    .our-team .title:before,
+    .our-team .title:after{
+        content: "";
+        width: 2px;
+        height: 300px;
+        background: #95ccea;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        transform: translateY(100%);
+        transition: all 0.55s ease 0s;
+    }
+    .our-team:hover .title:before,
+    .our-team:hover .title:after{
+        transform: translate(0, 0);
+    }
+    .view-founder1 {
+        margin-left: 110px;
+    }
+    .view-founder2 {
+        margin-left: 240px;
+    }
+}
